@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Images Side by Side</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            display: flex;
+            justify-content: center;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Ensures images wrap if the screen is small */
+            gap: 10px;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: calc(33.33% - 10px); /* 3 per row for larger images */
+            max-width: 260px; /* Ensures 3 images per row fit within A4 width */
+            max-height: 350px; /* Ensures images fit within A4 height */
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Mobile-friendly */
+        @media (max-width: 768px) {
+            .image-container img {
+                width: calc(33.33% - 10px); /* 3 per row on medium screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .image-container img {
+                width: calc(50% - 10px); /* 2 per row on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="one/IMG-20250806-WA0002.jpg" alt="IMG-20250806-WA0002">
+        <img src="one/IMG-20250806-WA0004.jpg" alt="IMG-20250806-WA0004">
+        <img src="one/IMG-20250806-WA0006.jpg" alt="IMG-20250806-WA0006">
+        <img src="one/IMG-20250806-WA0007.jpg" alt="IMG-20250806-WA0007">
+        <img src="one/IMG-20250806-WA0008.jpg" alt="IMG-20250806-WA0008">
+        <img src="one/IMG-20250806-WA0009.jpg" alt="IMG-20250806-WA0009">
+        <img src="one/IMG-20250806-WA0010.jpg" alt="IMG-20250806-WA0010">
+        <img src="one/IMG-20250806-WA0013.jpg" alt="IMG-20250806-WA0013">
+        <img src="one/IMG-20250806-WA0017.jpg" alt="IMG-20250806-WA0017">
+    </div>
+</body>
+</html>
