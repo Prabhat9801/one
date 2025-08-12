@@ -44,6 +44,23 @@
                 width: calc(50% - 10px); /* 2 per row on small screens */
             }
         }
+        .switch-btn {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            background: #007bff;
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: background 0.2s;
+            z-index: 100;
+        }
+        .switch-btn:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -58,5 +75,6 @@
         <img src="one/IMG-20250806-WA0013.jpg" alt="IMG-20250806-WA0013">
         <img src="one/IMG-20250806-WA0017.jpg" alt="IMG-20250806-WA0017">
     </div>
+    <a href="index2.html" class="switch-btn">Show Folder Two Images</a>
 </body>
 </html>

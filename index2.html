@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Two Images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            display: flex;
+            justify-content: center;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: calc(33.33% - 10px);
+            max-width: 260px;
+            max-height: 350px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .image-container img {
+                width: calc(33.33% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .image-container img {
+                width: calc(50% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="two/IMG-20250812-WA0004.jpg" alt="IMG-20250812-WA0004">
+        <img src="two/IMG-20250812-WA0005.jpg" alt="IMG-20250812-WA0005">
+        <img src="two/IMG-20250812-WA0006.jpg" alt="IMG-20250812-WA0006">
+        <img src="two/IMG-20250812-WA0007.jpg" alt="IMG-20250812-WA0007">
+        <img src="two/IMG-20250812-WA0008.jpg" alt="IMG-20250812-WA0008">
+        <img src="two/IMG-20250812-WA0009.jpg" alt="IMG-20250812-WA0009">
+    </div>
+</body>
+</html>
